@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capt Sky Implant Cosmetic Dentistry · Bajada, Davao City (concept)</title>
+<meta name="description" content="Concept redesign: dental implants and cosmetic dentistry at Capt Sky Implant Cosmetic Dentistry, Ground Floor, Bormaheco Bldg., J.P. Laurel Ave, Bajada, Davao City.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a1628">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1628'/%3E%3Cpath d='M9 8c0-3 4-3.5 5-1.5 1-1.6 3-1.6 4 0 1-2 5-1.5 5 1.5 0 3-1 5-2 6H11c-1-1-2-3-2-6z' fill='%23f4efe6'/%3E%3Cpath d='M12 15h8l-1 3h-6zM12.5 19h7l-1.5 8-2 2-2-2z' fill='%23c3cad3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');if(matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('rm');</script>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+<style>
+html,body{background:#0a1628}
+:root{
+  --navy:#0a1628;--navy-2:#10223a;--navy-3:#1a3150;--navy-4:#24405f;
+  --warm:#f6f3ee;--warm-2:#ece7df;--warm-3:#e0dad0;
+  --ink:#0c1a2b;--ink-70:rgba(12,26,43,.74);--ink-55:rgba(12,26,43,.6);
+  --silver:#c3cad3;--silver-2:#8f99a6;--silver-d:#5d6875;
+  --aqua:#45d8c8;--aqua-d:#0b746c;--aqua-soft:rgba(69,216,200,.14);
+  --on-navy:#eef1f4;--on-navy-70:rgba(238,241,244,.74);--on-navy-50:rgba(238,241,244,.56);
+  --ti:linear-gradient(100deg,#7f8995 0%,#e9edf1 34%,#a3adb8 52%,#f2f4f6 70%,#8b95a1 100%);
+  --line-d:rgba(195,202,211,.18);--line-l:rgba(12,26,43,.12);
+  --r:22px;--r-s:14px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --f-d:"Sora",system-ui,sans-serif;--f-b:"Inter",system-ui,sans-serif;
+  --pad:clamp(20px,4.4vw,64px);
+  --sec:clamp(84px,10vw,140px);
+  --rib:30px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+.rm{scroll-behavior:auto}
+body{margin:0;font:400 16px/1.6 var(--f-b);color:var(--ink);background:var(--warm);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+::selection{background:var(--aqua);color:var(--navy)}
+:focus-visible{outline:2px solid var(--aqua);outline-offset:3px;border-radius:6px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1220px;margin:0 auto;padding:0 var(--pad)}
+svg.i{width:18px;height:18px;flex:none}
+
+/* ribbon + progress */
+.ribbon{position:fixed;top:0;left:0;right:0;z-index:60;height:var(--rib);display:flex;align-items:center;justify-content:center;padding:0 14px;background:#050d18;color:var(--on-navy-70);font:500 11.5px/1.25 var(--f-b);letter-spacing:.04em;text-align:center}
+.progress{position:fixed;top:var(--rib);left:0;height:2px;width:100%;z-index:61;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--silver),var(--aqua))}
+
+/* nav */
+.nav{position:fixed;z-index:55;top:calc(var(--rib) + 14px);left:50%;translate:-50% 0;width:min(1180px,calc(100% - 28px));display:flex;align-items:center;gap:18px;padding:8px 8px 8px 18px;border-radius:999px;background:rgba(10,22,40,.62);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(195,202,211,.16);color:var(--on-navy);transition:background .4s,top .4s var(--ease)}
+.nav.is-scrolled{background:rgba(10,22,40,.86);top:calc(var(--rib) + 8px)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.brand svg{width:30px;height:30px;flex:none}
+.brand b{display:block;font:600 16px/1 var(--f-d);letter-spacing:.12em}
+.brand small{display:block;font:500 9.5px/1.2 var(--f-b);letter-spacing:.2em;text-transform:uppercase;color:var(--on-navy-50);margin-top:4px;white-space:nowrap}
+.nav__links{display:flex;gap:4px;margin:0 0 0 auto;padding:0;list-style:none}
+.nav__links a{display:block;padding:9px 13px;border-radius:999px;text-decoration:none;font:500 13.5px/1 var(--f-b);color:var(--on-navy-70);transition:color .2s,background .2s}
+.nav__links a:hover{color:#fff;background:rgba(255,255,255,.07)}
+.nav__cta{display:flex;gap:8px}
+.burger{display:none;margin-left:auto;width:44px;height:44px;border-radius:50%;border:1px solid rgba(195,202,211,.22);background:transparent;cursor:pointer;align-items:center;justify-content:center}
+.burger span{display:block;width:16px;height:1.5px;background:currentColor;position:relative;transition:transform .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:currentColor;transition:transform .3s}
+.burger span::before{top:-5px}.burger span::after{top:5px}
+.menu-open .burger span{background:transparent}
+.menu-open .burger span::before{transform:translateY(5px) rotate(45deg)}
+.menu-open .burger span::after{transform:translateY(-5px) rotate(-45deg)}
+.sheet{position:fixed;inset:0;z-index:54;background:rgba(6,14,26,.96);backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:center;gap:6px;padding:120px 28px 120px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.menu-open .sheet{opacity:1;visibility:visible}
+.sheet a{font:500 30px/1.25 var(--f-d);letter-spacing:-.02em;color:var(--on-navy);text-decoration:none;padding:6px 0}
+.sheet a small{display:block;font:500 11px/1 var(--f-b);letter-spacing:.2em;color:var(--aqua);text-transform:uppercase;margin-bottom:6px}
+
+/* buttons */
+.btn{--h:48px;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:var(--h);padding:0 22px;border-radius:999px;border:1px solid transparent;font:600 14.5px/1 var(--f-b);letter-spacing:.01em;text-decoration:none;cursor:pointer;transition:transform .25s var(--ease),background .25s,border-color .25s,color .25s,box-shadow .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+.btn--ti{background:var(--ti);background-size:200% 100%;background-position:30% 0;color:#0a1628;box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 22px -10px rgba(0,0,0,.6)}
+.btn--ti:hover{background-position:80% 0}
+.btn--aqua{background:var(--aqua);color:#04201e}
+.btn--aqua:hover{background:#6ae5d8}
+.btn--ghost{border-color:rgba(195,202,211,.32);color:var(--on-navy);background:rgba(255,255,255,.03)}
+.btn--ghost:hover{border-color:var(--silver);background:rgba(255,255,255,.08)}
+.btn--ink{background:var(--navy);color:var(--on-navy)}
+.btn--ink:hover{background:var(--navy-3)}
+.btn--line{border-color:var(--line-l);color:var(--ink);background:transparent}
+.btn--line:hover{border-color:var(--ink)}
+.btn--sm{--h:40px;padding:0 16px;font-size:13.5px}
+
+/* type */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 11.5px/1.2 var(--f-b);letter-spacing:.2em;text-transform:uppercase;color:var(--silver-d)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 4px var(--aqua-soft)}
+.dark .eyebrow{color:var(--silver)}
+h1,h2,h3{font-family:var(--f-d);font-weight:500;margin:0;letter-spacing:-.035em}
+h2{font-size:clamp(34px,4.7vw,66px);line-height:1.02;margin-top:18px}
+h2 em,h1 em{font-style:normal;background:var(--ti);-webkit-background-clip:text;background-clip:text;color:transparent}
+section:not(.dark) h2 em{background:linear-gradient(100deg,#3b4655,#7d8794 50%,#3b4655);-webkit-background-clip:text;background-clip:text}
+.lead{font-size:clamp(16px,1.35vw,18.5px);line-height:1.6;color:var(--ink-70);max-width:38rem;margin:20px 0 0}
+.dark .lead{color:var(--on-navy-70)}
+.tag{display:inline-flex;align-items:center;gap:8px;font:600 10.5px/1 var(--f-b);letter-spacing:.18em;text-transform:uppercase;padding:7px 11px;border-radius:999px;border:1px solid var(--line-l);color:var(--ink-55)}
+.dark .tag{border-color:var(--line-d);color:var(--on-navy-50)}
+.tag i{width:5px;height:5px;border-radius:50%;background:var(--aqua);display:block}
+section{position:relative}
+.dark{background:var(--navy);color:var(--on-navy)}
+.light{background:var(--warm)}
+.sec{padding:var(--sec) 0}
+
+/* ---------- BUILD (hero + 3D journey) ---------- */
+.build{position:relative;background:radial-gradient(120% 80% at 72% 38%,#1c3556 0%,#0f2139 42%,#0a1628 75%)}
+.build__stage{position:relative;min-height:100vh;min-height:100svh;overflow:hidden;padding:calc(var(--rib) + 110px) 0 60px}
+.js:not(.rm) .build{height:330vh}
+.js:not(.rm) .build__stage{position:sticky;top:0;height:100vh;height:100svh;padding:0}
+.build__grid{position:relative;z-index:2;height:100%;display:grid;grid-template-columns:minmax(0,520px) 1fr;align-items:center;max-width:1300px;margin:0 auto;padding:calc(var(--rib) + 80px) var(--pad) 48px;pointer-events:none}
+.build__grid>*{pointer-events:auto}
+.build__canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1;opacity:0;transition:opacity 1s var(--ease);cursor:grab;touch-action:pan-y}
+.build__canvas:active{cursor:grabbing}
+.is-3d .build__canvas{opacity:1}
+.build__poster{position:absolute;z-index:1;right:max(6vw,calc(50% - 560px));top:50%;translate:0 -46%;width:min(30vw,360px);height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.45));transition:opacity .8s}
+.is-3d .build__poster{opacity:0;pointer-events:none}
+.build__floor{position:absolute;left:0;right:0;bottom:0;height:34%;z-index:0;background:linear-gradient(transparent,rgba(5,12,22,.6))}
+.grid-lines{position:absolute;inset:0;z-index:0;opacity:.35;background-image:linear-gradient(rgba(195,202,211,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(195,202,211,.06) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(70% 60% at 65% 45%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(70% 60% at 65% 45%,#000 20%,transparent 75%)}
+
+.copy{position:relative}
+.hero h1{font-size:clamp(42px,5.6vw,84px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:22px 0 0}
+.hero h1 span{display:block;white-space:nowrap}
+.hero p{margin:22px 0 0;max-width:30rem;color:var(--on-navy-70);font-size:clamp(15.5px,1.3vw,17.5px)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.hero__facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:28px;font:500 12.5px/1.4 var(--f-b);color:var(--on-navy-50)}
+.hero__facts span{display:inline-flex;align-items:center;gap:7px}
+.hero__facts svg{width:14px;height:14px;color:var(--silver)}
+
+.steps{list-style:none;margin:0;padding:0}
+.step{position:relative}
+.step__n{font:500 12px/1 var(--f-b);letter-spacing:.22em;color:var(--aqua);text-transform:uppercase}
+.step h3{font-size:clamp(30px,3.4vw,50px);line-height:1.02;margin:14px 0 0;font-weight:500}
+.step p{margin:16px 0 0;color:var(--on-navy-70);max-width:28rem;font-size:clamp(15.5px,1.25vw,17px)}
+.steps__note{font:500 12px/1.5 var(--f-b);color:var(--on-navy-50);margin-top:22px;max-width:28rem}
+
+/* pinned mode: hero + steps stacked, one visible at a time */
+.js:not(.rm) .copy--stack{display:grid}
+.js:not(.rm) .copy--stack>.panel{grid-area:1/1;align-self:center;transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js:not(.rm) .panel:not(.is-on){opacity:0;transform:translateY(18px);pointer-events:none;visibility:hidden;transition:opacity .45s,transform .45s,visibility 0s .45s}
+.js:not(.rm) .steps{display:grid}
+.js:not(.rm) .steps .step{grid-area:1/1}
+/* no-JS / reduced motion: everything listed */
+html:not(.js) .panel+.panel,.rm .panel+.panel{margin-top:56px}
+html:not(.js) .steps,.rm .steps{display:grid;gap:34px;grid-template-columns:1fr 1fr}
+html:not(.js) .step h3,.rm .step h3{font-size:28px}
+
+.rail{position:absolute;z-index:3;right:var(--pad);top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:6px;list-style:none;margin:0;padding:0}
+html:not(.js) .rail,.rm .rail{display:none}
+.rail button{display:flex;align-items:center;justify-content:flex-end;gap:12px;background:none;border:0;cursor:pointer;padding:8px 0;color:var(--on-navy-50);font:500 12px/1 var(--f-b);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+.rail button i{display:block;width:22px;height:2px;border-radius:2px;background:currentColor;transition:width .4s var(--ease),background .3s}
+.rail button:hover{color:var(--on-navy)}
+.rail button.is-on{color:var(--on-navy)}
+.rail button.is-on i{width:46px;background:var(--aqua)}
+.chip3d{position:absolute;z-index:3;left:50%;bottom:26px;translate:-50% 0;display:flex;align-items:center;gap:10px;padding:9px 14px;border-radius:999px;background:rgba(10,22,40,.55);border:1px solid var(--line-d);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);font:500 11.5px/1 var(--f-b);letter-spacing:.08em;color:var(--on-navy-70);white-space:nowrap}
+.chip3d b{color:var(--aqua);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:10.5px}
+.chip3d svg{width:16px;height:16px}
+.scrollcue{position:absolute;z-index:3;left:var(--pad);bottom:28px;display:flex;align-items:center;gap:10px;font:500 11px/1 var(--f-b);letter-spacing:.2em;text-transform:uppercase;color:var(--on-navy-50);transition:opacity .4s}
+.scrollcue i{display:block;width:1px;height:34px;background:linear-gradient(var(--aqua),transparent);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+html:not(.js) .scrollcue,.rm .scrollcue{display:none}
+.build.past-hero .scrollcue{opacity:0}
+
+/* entrance */
+.js:not(.rm) .hero .rise{opacity:0;transform:translateY(22px);animation:rise .9s var(--ease) forwards}
+.js:not(.rm) .hero .rise:nth-child(2){animation-delay:.08s}.js:not(.rm) .hero .rise:nth-child(3){animation-delay:.16s}.js:not(.rm) .hero .rise:nth-child(4){animation-delay:.26s}.js:not(.rm) .hero .rise:nth-child(5){animation-delay:.34s}
+.js:not(.rm) .hero h1 span{display:block;overflow:hidden}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* ---------- FOLLOW-UP (their post) ---------- */
+.follow{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(32px,5vw,80px);align-items:start}
+.quote{margin:30px 0 0;font:400 clamp(26px,3.1vw,44px)/1.18 var(--f-d);letter-spacing:-.03em;color:var(--ink);position:relative;padding-left:clamp(0px,3vw,40px)}
+.quote::before{content:"";position:absolute;left:0;top:.25em;bottom:.25em;width:2px;background:linear-gradient(var(--aqua),var(--silver));display:none}
+@media (min-width:761px){.quote::before{display:block}}
+.quote mark{background:linear-gradient(transparent 62%,rgba(69,216,200,.32) 62%);color:inherit;padding:0 .05em}
+.quote-src{margin:22px 0 0;padding-left:clamp(0px,3vw,40px);font:500 13px/1.4 var(--f-b);color:var(--ink-55)}
+.asklist{margin-top:44px;padding-left:clamp(0px,3vw,40px)}
+.asklist h3{font:600 13px/1.3 var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-55)}
+.asklist p.small{font-size:14px;color:var(--ink-55);margin:8px 0 16px}
+.qbtns{display:flex;flex-direction:column;gap:10px}
+.qbtn{display:flex;align-items:center;gap:14px;width:100%;text-align:left;padding:15px 18px;border-radius:var(--r-s);border:1px solid var(--line-l);background:#fff;cursor:pointer;font:500 15.5px/1.35 var(--f-b);color:var(--ink);transition:border-color .25s,box-shadow .25s,transform .25s var(--ease)}
+.qbtn:hover{border-color:rgba(12,26,43,.35);transform:translateY(-1px)}
+.qbtn .box{width:22px;height:22px;border-radius:7px;border:1.5px solid rgba(12,26,43,.3);flex:none;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.qbtn .box svg{width:13px;height:13px;color:#04201e;opacity:0;transition:opacity .2s}
+.qbtn[aria-pressed="true"]{border-color:var(--aqua-d);box-shadow:0 0 0 3px var(--aqua-soft)}
+.qbtn[aria-pressed="true"] .box{background:var(--aqua);border-color:var(--aqua)}
+.qbtn[aria-pressed="true"] .box svg{opacity:1}
+.qnote{min-height:22px;margin-top:12px;font:500 13.5px/1.4 var(--f-b);color:var(--aqua-d)}
+html:not(.js) .qbtn .box{display:none}
+.here{position:sticky;top:110px;border-radius:var(--r);overflow:hidden;background:var(--navy);color:var(--on-navy);box-shadow:0 30px 60px -30px rgba(10,22,40,.55)}
+.here__img{position:relative;aspect-ratio:4/3;overflow:hidden}
+.here__img img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;filter:saturate(.85)}
+.here__img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(10,22,40,.85))}
+.cap{position:absolute;z-index:2;left:14px;bottom:12px;font:500 11px/1 var(--f-b);letter-spacing:.06em;color:rgba(238,241,244,.8)}
+.here__body{padding:26px 26px 28px}
+.here__body h3{font-size:24px;line-height:1.15;letter-spacing:-.025em}
+.here__body p{margin:10px 0 0;color:var(--on-navy-70);font-size:15px}
+.here__body .btn{margin-top:20px}
+.pin{display:flex;gap:12px;align-items:flex-start;margin-top:16px;padding-top:16px;border-top:1px solid var(--line-d);font-size:14.5px;color:var(--on-navy-70)}
+.pin svg{width:18px;height:18px;color:var(--aqua);margin-top:3px}
+
+/* ---------- CLINIC (credentials) ---------- */
+.clinic{overflow:hidden;background:linear-gradient(180deg,#0a1628,#0f2036)}
+.plaque{position:relative;margin-top:46px;border-radius:28px;padding:clamp(30px,5vw,70px);background:
+  repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 3px),
+  linear-gradient(115deg,#59636f 0%,#c9d0d8 22%,#8a949f 40%,#e7ebef 58%,#7c8692 78%,#b8c0c9 100%);
+  color:#0a1628;box-shadow:inset 0 1px 0 rgba(255,255,255,.75),inset 0 -1px 0 rgba(0,0,0,.25),0 40px 80px -40px rgba(0,0,0,.8);overflow:hidden;isolation:isolate}
+.plaque::after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(420px 260px at var(--mx,30%) var(--my,30%),rgba(255,255,255,.55),transparent 70%);mix-blend-mode:soft-light;transition:background .1s}
+.plaque__screw{position:absolute;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f4f6f8,#79838f 70%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
+.plaque__screw::after{content:"";position:absolute;left:3px;right:3px;top:6px;height:2px;background:rgba(10,22,40,.45);transform:rotate(40deg)}
+.plaque__screw:nth-of-type(1){left:18px;top:18px}.plaque__screw:nth-of-type(2){right:18px;top:18px}.plaque__screw:nth-of-type(3){left:18px;bottom:18px}.plaque__screw:nth-of-type(4){right:18px;bottom:18px}
+.plaque blockquote{margin:0;font:500 clamp(30px,4.6vw,68px)/1.02 var(--f-d);letter-spacing:-.045em;max-width:15em;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.plaque__by{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-top:26px;font:600 12px/1.3 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:rgba(10,22,40,.72)}
+.plaque__by span{padding:8px 12px;border-radius:999px;background:rgba(10,22,40,.08);border:1px solid rgba(10,22,40,.18)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+.tile{position:relative;padding:26px 24px 26px;border-radius:var(--r);background:rgba(255,255,255,.035);border:1px solid var(--line-d);transition:border-color .3s,background .3s,transform .3s var(--ease)}
+.tile:hover{border-color:rgba(69,216,200,.45);background:rgba(255,255,255,.055);transform:translateY(-3px)}
+.tile svg{width:34px;height:34px;color:var(--silver)}
+.tile h3{font-size:21px;line-height:1.2;margin-top:18px;letter-spacing:-.02em}
+.tile p{margin:8px 0 0;font-size:14.5px;color:var(--on-navy-70)}
+.tile small{display:block;margin-top:14px;font:500 11px/1.3 var(--f-b);letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-50)}
+
+/* ---------- FULL ARCH explorer ---------- */
+.arch{background:var(--warm-2)}
+.arch__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,80px);align-items:center;margin-top:46px}
+.tabs{display:inline-flex;gap:4px;padding:5px;border-radius:999px;background:#fff;border:1px solid var(--line-l);flex-wrap:wrap}
+.tabs button{min-height:44px;padding:0 18px;border-radius:999px;border:0;background:transparent;cursor:pointer;font:600 14px/1 var(--f-b);color:var(--ink-55);transition:background .3s,color .3s}
+.tabs button:hover{color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--navy);color:var(--on-navy)}
+html:not(.js) .tabs{display:none}
+.apanel h3{font-size:clamp(26px,2.6vw,36px);line-height:1.1;margin-top:26px;letter-spacing:-.03em}
+.apanel p{margin:14px 0 0;color:var(--ink-70);max-width:34rem}
+.apanel ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.apanel li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--ink-70)}
+.apanel li::before{content:"";width:8px;height:8px;margin-top:8px;border-radius:2px;background:var(--aqua-d);transform:rotate(45deg);flex:none}
+.js .apanel[hidden]{display:none}
+html:not(.js) .apanel{margin-bottom:40px}
+.apanel .btn{margin-top:26px}
+.archfig{position:relative;margin:0;padding:clamp(18px,3vw,36px);border-radius:28px;background:radial-gradient(80% 70% at 50% 60%,#13294a,#0a1628);box-shadow:0 40px 80px -40px rgba(10,22,40,.6)}
+.archfig svg{width:100%;height:auto;display:block}
+.archfig figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:10px;font:500 11.5px/1.4 var(--f-b);color:var(--on-navy-50);letter-spacing:.04em}
+.archfig figcaption b{color:var(--aqua);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:10.5px}
+.tooth{fill:#efe9de;stroke:rgba(10,22,40,.25);stroke-width:1;transition:fill .5s,opacity .5s,stroke .5s}
+.gumline{fill:none;stroke:rgba(205,160,165,.28);stroke-width:58;stroke-linecap:round}
+.bridge{fill:none;stroke:rgba(69,216,200,.85);stroke-width:2;stroke-dasharray:6 6;opacity:0;transition:opacity .5s}
+.imp{opacity:0;transition:opacity .5s,transform .6s var(--ease);transform-box:fill-box;transform-origin:center}
+.imp circle.o{fill:none;stroke:var(--aqua);stroke-width:2}
+.imp circle.c{fill:url(#tiG)}
+.imp line{stroke:var(--aqua);stroke-width:2;stroke-linecap:round}
+.lbl{font:600 11px var(--f-b);letter-spacing:.14em;fill:rgba(238,241,244,.7);text-transform:uppercase;opacity:0;transition:opacity .5s}
+[data-mode="single"] #tr5{fill:#fdfbf7;stroke:var(--aqua)}
+[data-mode="single"] .m-single{opacity:1}
+[data-mode="few"] #tr3,[data-mode="few"] #tr4,[data-mode="few"] #tr5{fill:#fdfbf7;stroke:var(--aqua)}
+[data-mode="few"] .m-few{opacity:1}
+[data-mode="full"] .tooth{fill:#fdfbf7;stroke:rgba(69,216,200,.55)}
+[data-mode="full"] .m-full{opacity:1}
+
+/* ---------- GALLERY ---------- */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,15vw,210px);gap:12px;margin-top:46px}
+.gal button{position:relative;padding:0;border:0;border-radius:var(--r-s);overflow:hidden;cursor:zoom-in;background:var(--warm-3)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease),filter .5s}
+.gal button:hover img{transform:scale(1.045)}
+.gal button::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,22,40,.55))}
+.gal .cap{z-index:2}
+.g1{grid-column:span 5;grid-row:span 3}.g2{grid-column:span 7;grid-row:span 2}.g3{grid-column:span 3;grid-row:span 1}.g4{grid-column:span 4;grid-row:span 1}.g5{grid-column:span 12;grid-row:span 1}
+.g5 img{object-position:50% 38%}
+.lb{position:fixed;inset:0;z-index:90;display:grid;place-items:center;background:rgba(4,10,20,.94);opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.lb.is-open{opacity:1;visibility:visible}
+.lb figure{margin:0;max-width:min(1100px,92vw);touch-action:pan-y}
+.lb img{max-height:80vh;width:auto;margin:0 auto;border-radius:12px;user-select:none}
+.lb figcaption{margin-top:12px;text-align:center;font:500 13px var(--f-b);color:var(--on-navy-70)}
+.lb__btn{position:absolute;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;display:grid;place-items:center;cursor:pointer;transition:background .2s}
+.lb__btn:hover{background:rgba(255,255,255,.16)}
+.lb__close{top:calc(var(--rib) + 16px);right:16px}.lb__prev{left:16px;top:50%}.lb__next{right:16px;top:50%}
+.lb__count{position:absolute;top:calc(var(--rib) + 30px);left:22px;font:500 12px var(--f-b);letter-spacing:.2em;color:var(--on-navy-50)}
+
+/* ---------- CONSULT helper ---------- */
+.consult{background:radial-gradient(90% 70% at 85% 10%,#173153,#0a1628 60%)}
+.helper{margin-top:46px;display:grid;grid-template-columns:260px 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line-d);background:rgba(255,255,255,.025)}
+.helper__side{padding:30px 26px;border-right:1px solid var(--line-d);background:rgba(0,0,0,.12)}
+.hsteps{list-style:none;margin:0;padding:0;display:grid;gap:4px;counter-reset:s}
+.hsteps li{display:flex;align-items:center;gap:12px;padding:10px 0;font:500 14px/1.3 var(--f-b);color:var(--on-navy-50);transition:color .3s}
+.hsteps li::before{counter-increment:s;content:counter(s);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-d);font-size:12px;flex:none;transition:all .3s}
+.hsteps li.is-on{color:var(--on-navy)}
+.hsteps li.is-on::before{background:var(--aqua);color:#04201e;border-color:var(--aqua)}
+.hsteps li.is-done::before{background:rgba(69,216,200,.15);border-color:rgba(69,216,200,.5);color:var(--aqua)}
+.helper__side p{margin:22px 0 0;font-size:12.5px;line-height:1.5;color:var(--on-navy-50)}
+.helper__main{padding:clamp(24px,3.4vw,44px);min-height:430px;display:flex;flex-direction:column}
+.hpane h3{font-size:clamp(22px,2.2vw,30px);line-height:1.15;letter-spacing:-.025em}
+.hpane .sub{margin:8px 0 0;font-size:14.5px;color:var(--on-navy-50)}
+.js .hpane[hidden]{display:none}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.opt{min-height:48px;padding:12px 18px;border-radius:14px;border:1px solid rgba(195,202,211,.24);background:rgba(255,255,255,.03);cursor:pointer;font:500 15px/1.3 var(--f-b);color:var(--on-navy);text-align:left;transition:border-color .25s,background .25s,transform .25s var(--ease)}
+.opt:hover{border-color:var(--silver);background:rgba(255,255,255,.07);transform:translateY(-1px)}
+.opt[aria-pressed="true"]{border-color:var(--aqua);background:rgba(69,216,200,.13);box-shadow:0 0 0 3px rgba(69,216,200,.12)}
+.opt small{display:block;font-size:12.5px;color:var(--on-navy-50);margin-top:3px}
+.hnav{display:flex;gap:10px;margin-top:auto;padding-top:28px;flex-wrap:wrap}
+.btn[disabled]{opacity:.4;pointer-events:none}
+.msg{margin-top:20px;padding:20px 22px;border-radius:16px;background:#f6f3ee;color:var(--ink);font:400 14.5px/1.6 var(--f-b);white-space:pre-wrap;max-height:280px;overflow:auto;border:1px solid rgba(255,255,255,.4)}
+.msg b{display:block;font:600 11px/1 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-bottom:10px}
+.privacy{display:flex;gap:10px;align-items:center;margin-top:14px;font-size:13px;color:var(--on-navy-50)}
+.privacy svg{width:16px;height:16px;color:var(--aqua)}
+.copied{font:600 13px var(--f-b);color:var(--aqua)}
+.nojs-contact{display:none}
+html:not(.js) .helper{display:none}
+html:not(.js) .nojs-contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+/* ---------- FAQ ---------- */
+.faq__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px)}
+.faq__list{border-top:1px solid var(--line-l)}
+details{border-bottom:1px solid var(--line-l)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:22px 0;cursor:pointer;font:500 clamp(17px,1.5vw,20px)/1.35 var(--f-d);letter-spacing:-.015em}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:34px;height:34px;border-radius:50%;border:1px solid var(--line-l);flex:none;position:relative;transition:background .3s,transform .4s var(--ease)}
+summary .pm::before,summary .pm::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:1.5px;background:var(--ink);translate:-50% -50%;transition:transform .4s var(--ease)}
+summary .pm::after{transform:rotate(90deg)}
+details[open] summary .pm{background:var(--navy);transform:rotate(180deg)}
+details[open] summary .pm::before,details[open] summary .pm::after{background:#fff}
+details[open] summary .pm::after{transform:rotate(0)}
+summary:hover .pm{border-color:var(--ink)}
+.ans{padding:0 50px 24px 0;color:var(--ink-70);font-size:15.5px}
+.ans p{margin:0 0 10px}
+.ans a{color:var(--aqua-d);font-weight:600}
+.faq__aside p{color:var(--ink-70)}
+.faq__aside .btn{margin-top:20px}
+
+/* ---------- VISIT ---------- */
+.visit{background:var(--warm-2)}
+.visit__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,4vw,56px);margin-top:46px;align-items:stretch}
+.addr{padding:clamp(26px,3vw,40px);border-radius:28px;background:#fff;border:1px solid var(--line-l);display:flex;flex-direction:column}
+.addr .big{font:500 clamp(22px,2.2vw,30px)/1.22 var(--f-d);letter-spacing:-.025em;margin:16px 0 0}
+.addr .land{margin:16px 0 0;padding:14px 16px;border-radius:14px;background:var(--warm);font-size:14.5px;color:var(--ink-70)}
+.addr .land b{display:block;font:600 11px/1 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-55);margin-bottom:6px}
+.addr .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:24px}
+.map{position:relative;min-height:440px;border-radius:28px;overflow:hidden;background:var(--navy);color:var(--on-navy)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map__ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:24px;background:
+  radial-gradient(circle at 50% 46%,rgba(69,216,200,.16),transparent 40%),
+  linear-gradient(rgba(195,202,211,.07) 1px,transparent 1px) 0 0/40px 40px,
+  linear-gradient(90deg,rgba(195,202,211,.07) 1px,transparent 1px) 0 0/40px 40px,var(--navy)}
+.map__ph .dot{width:18px;height:18px;border-radius:50%;background:var(--aqua);box-shadow:0 0 0 10px rgba(69,216,200,.18),0 0 0 22px rgba(69,216,200,.08)}
+.map__ph p{margin:0;font-size:14px;color:var(--on-navy-50);max-width:24rem}
+.map__ph strong{font:500 20px/1.2 var(--f-d);letter-spacing:-.02em}
+.map.is-on .map__ph{display:none}
+
+/* ---------- CONTACT + FOOTER ---------- */
+.contact{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,80px);align-items:end}
+.contact h2{font-size:clamp(40px,6vw,92px);line-height:.96}
+.clist{display:grid;gap:10px}
+.crow{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;border:1px solid var(--line-d);background:rgba(255,255,255,.03)}
+.crow svg{width:20px;height:20px;color:var(--aqua)}
+.crow div{min-width:0;flex:1}
+.crow small{display:block;font:600 10.5px/1.2 var(--f-b);letter-spacing:.16em;text-transform:uppercase;color:var(--on-navy-50)}
+.crow a,.crow span.v{display:block;font:500 16px/1.4 var(--f-b);color:var(--on-navy);text-decoration:none;overflow-wrap:anywhere}
+.crow a:hover{color:var(--aqua)}
+.cp{flex:none;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--line-d);background:transparent;color:var(--on-navy-70);cursor:pointer;font:600 12px/1 var(--f-b);transition:all .2s}
+.cp:hover{border-color:var(--silver);color:#fff}
+.cp.is-done{border-color:var(--aqua);color:var(--aqua)}
+html:not(.js) .cp{display:none}
+footer{background:#060f1c;color:var(--on-navy-70);padding:56px 0 120px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot nav a{font-size:14px;text-decoration:none;color:var(--on-navy-70)}
+.foot nav a:hover{color:#fff}
+.foot__legal{margin-top:34px;padding-top:24px;border-top:1px solid var(--line-d);display:grid;gap:6px;font-size:13px;color:var(--on-navy-50)}
+.foot__legal strong{color:var(--on-navy-70);font-weight:600}
+@media (min-width:901px){footer{padding-bottom:56px}}
+
+/* mobile call bar */
+.cbar{position:fixed;z-index:50;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));display:none;grid-template-columns:1fr 1fr 1.3fr;gap:6px;padding:6px;border-radius:20px;background:rgba(10,22,40,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(195,202,211,.2);box-shadow:0 16px 40px -10px rgba(0,0,0,.6)}
+.cbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:48px;border-radius:14px;font:600 14px/1 var(--f-b);text-decoration:none;color:var(--on-navy)}
+.cbar a:active{transform:scale(.97)}
+.cbar a.is-main{background:var(--aqua);color:#04201e}
+.cbar svg{width:17px;height:17px}
+
+/* reveal */
+.js:not(.rm) .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js:not(.rm) .rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .nav__links a{padding:9px 9px;font-size:13px}
+}
+@media (max-width:980px){
+  .nav__links,.nav__cta{display:none}
+  .burger{display:flex}
+}
+@media (max-width:900px){
+  .cbar{display:grid}
+  .follow,.faq__grid,.contact,.arch__grid,.visit__grid{grid-template-columns:1fr}
+  .here{position:relative;top:0}
+  .tiles{grid-template-columns:1fr}
+  .helper{grid-template-columns:1fr}
+  .helper__side{border-right:0;border-bottom:1px solid var(--line-d);padding:18px 20px}
+  .hsteps{grid-template-columns:repeat(4,1fr);gap:6px}
+  .hsteps li{flex-direction:column;gap:6px;font-size:11.5px;text-align:center;padding:4px 0}
+  .helper__side p{display:none}
+  .helper__main{min-height:0}
+}
+@media (max-width:760px){
+  :root{--rib:40px}
+  .ribbon{font-size:11px}
+  .nav{top:calc(var(--rib) + 8px);padding:6px 6px 6px 14px}
+  .brand small{font-size:8.5px;letter-spacing:.16em}
+  .build__grid{grid-template-columns:1fr;align-items:end;padding:calc(var(--rib) + 80px) var(--pad) 96px}
+  .js:not(.rm) .build{height:300vh}
+  .js:not(.rm) .build__canvas{height:42%;top:calc(var(--rib) + 92px)}
+  .js:not(.rm) .panel[data-panel="1"]>.eyebrow{display:none}
+  .js:not(.rm) .build__grid{align-content:end}
+  .js:not(.rm) .build__stage::after{content:"";position:absolute;left:0;right:0;bottom:0;height:50%;z-index:1;background:linear-gradient(180deg,transparent,rgba(10,22,40,.92) 34%);pointer-events:none}
+  .hero h1{font-size:clamp(36px,10.4vw,46px)}
+  .hero h1 span{white-space:normal}
+  .hero p{font-size:15px;margin-top:14px}
+  .js:not(.rm) .hero p .long{display:none}
+  .js:not(.rm) .hero__cta .btn--ghost{display:none}
+  .js:not(.rm) .copy--stack>.panel{align-self:end}
+  .hero__cta{margin-top:20px}
+  .hero__cta .btn{flex:1 1 auto}
+  .js:not(.rm) .hero__facts{display:none}
+  .js:not(.rm) .hero .eyebrow{display:none}
+  .step h3{font-size:32px;margin-top:10px}
+  .step p{font-size:15px;margin-top:10px}
+  .steps__note{margin-top:12px;font-size:11.5px}
+  .rail{top:auto;bottom:auto;right:auto;left:var(--pad);top:calc(var(--rib) + 78px);translate:none;flex-direction:row;gap:12px}
+  .rail button span{display:none}
+  .rail button i{width:16px}
+  .rail button.is-on i{width:34px}
+  .chip3d{bottom:auto;top:calc(var(--rib) + 82px);left:auto;right:var(--pad);translate:none;padding:7px 11px;font-size:10.5px}
+  .chip3d span{display:none}
+  .scrollcue{display:none}
+  .build__poster{position:relative;right:auto;top:auto;translate:none;margin:0 auto 26px;width:min(56vw,230px);display:block}
+  .js:not(.rm) .build__poster{position:absolute;left:50%;top:calc(var(--rib) + 120px);translate:-50% 0;margin:0;width:min(40vw,170px)}
+  html:not(.js) .steps,.rm .steps{grid-template-columns:1fr}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}
+  .g1{grid-column:span 1;grid-row:span 2}.g2{grid-column:span 1;grid-row:span 1}.g3{grid-column:span 1}.g4{grid-column:span 2;grid-row:span 1}.g5{grid-column:span 2}
+  .map{min-height:340px}
+  .lb__prev,.lb__next{top:auto;bottom:24px}
+  .lb__prev{left:calc(50% - 60px)}.lb__next{right:calc(50% - 60px)}
+  .ans{padding-right:0}
+  .tabs{display:flex;width:100%}
+  .tabs button{flex:1;padding:0 10px;font-size:13px}
+  .plaque blockquote{font-size:clamp(28px,8.4vw,40px)}
+}
+.rm .build__canvas{height:100vh;height:100svh;bottom:auto}
+html:not(.js) .build__poster{top:calc(var(--rib) + 170px);translate:none}
+html:not(.js) .chip3d span,html:not(.js) .chip3d svg{display:none}
+@media (max-width:760px){
+  html:not(.js) .build__stage,.rm .build__stage{padding-top:calc(var(--rib) + 84px)}
+  html:not(.js) .build__grid,.rm .build__grid{padding-top:16px}
+  html:not(.js) .build__poster,.rm .build__poster{width:150px;top:auto;margin-top:36px}
+  .rm .build__canvas{position:relative;height:48vh;inset:auto}
+  .rm.is-3d .build__poster{display:none}
+}
+@media (max-width:380px){.brand small{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="tiG" x1="0" x2="1"><stop offset="0" stop-color="#7f8995"/><stop offset=".4" stop-color="#eef1f4"/><stop offset=".6" stop-color="#a3adb8"/><stop offset="1" stop-color="#7f8995"/></linearGradient>
+  </defs>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 4h3.5l1.6 4-2.2 1.4a11 11 0 0 0 6.7 6.7L16 14l4 1.6V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m5-5-5 5 5 5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.5a3.5 3.5 0 0 1 7 0v3"/></g></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><rect x="8" y="8" width="12" height="12" rx="2.5"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c0-2.5 4-4.5 9-4.5s9 2 9 4.5-4 4.5-9 4.5"/><path d="m10 14.5 2 2-2 2"/></g></symbol>
+  <symbol id="i-implant" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 9c0-4.5 5-5.4 7-2.6 1.6-2 4.4-2 6 0 2-2.8 7-1.9 7 2.6 0 4-1.3 7-2.6 8.6H12.6C11.3 16 10 13 10 9z"/><path d="M15 17.6h10l-1.2 4H16.2z"/><path d="M16 23h8l-1.6 11L20 36l-2.4-2z"/><path d="M15.6 26.5h8.8M16 30h8" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 5v8M20 27v8M5 20h8M27 20h8"/><path d="M20 14c1 4 2 5 6 6-4 1-5 2-6 6-1-4-2-5-6-6 4-1 5-2 6-6z"/></g></symbol>
+  <symbol id="i-door" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 34h28M10 34V8h20v26"/><path d="M14 34V13h12v21"/><circle cx="23" cy="24" r="1" fill="currentColor"/></g></symbol>
+</svg>
+
+<div class="ribbon" role="note">Concept redesign by Jeig Torio · not the business's official website</div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Capt Sky Implant Cosmetic Dentistry, back to top">
+    <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="rgba(195,202,211,.35)"/><use href="#i-implant" x="4" y="3" width="32" height="32" style="color:#e4e8ec"/></svg>
+    <span><b>CAPT SKY</b><small>Implant · Cosmetic Dentistry</small></span>
+  </a>
+  <ul class="nav__links">
+    <li><a href="#build">How it's built</a></li>
+    <li><a href="#follow-up">Follow-up</a></li>
+    <li><a href="#full-arch">Full arch</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul>
+  <div class="nav__cta">
+    <a class="btn btn--ghost btn--sm" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call</a>
+    <a class="btn btn--ti btn--sm" href="#consult">Request a consult</a>
+  </div>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span></span></button>
+</header>
+<nav class="sheet" id="sheet" aria-label="Menu">
+  <a href="#build"><small>01</small>How an implant is built</a>
+  <a href="#follow-up"><small>02</small>Follow-up care</a>
+  <a href="#clinic"><small>03</small>The clinic</a>
+  <a href="#full-arch"><small>04</small>Full arch</a>
+  <a href="#consult"><small>05</small>Request a consult</a>
+  <a href="#faq"><small>06</small>Questions</a>
+  <a href="#visit"><small>07</small>Visit Bajada</a>
+</nav>
+
+<main>
+<!-- ============ HERO + 3D BUILD ============ -->
+<section class="build dark" id="build" aria-label="How an implant is built up">
+  <div class="build__stage" id="stage">
+    <div class="grid-lines" aria-hidden="true"></div>
+    <div class="build__floor" aria-hidden="true"></div>
+    <canvas class="build__canvas" id="implant3d" tabindex="0" role="img" aria-label="Illustration: a 3D dental implant (threaded titanium post, abutment and ceramic crown) that assembles as you scroll. Drag or use the arrow keys to turn it."></canvas>
+    <svg class="build__poster" viewBox="0 0 300 520" role="img" aria-label="Illustration: a dental implant with a ceramic crown, an abutment and a threaded titanium post">
+      <defs>
+        <linearGradient id="pc" x1="0" x2="1"><stop offset="0" stop-color="#d9d2c4"/><stop offset=".45" stop-color="#fbf8f2"/><stop offset="1" stop-color="#cfc7b8"/></linearGradient>
+        <linearGradient id="pt" x1="0" x2="1"><stop offset="0" stop-color="#6f7984"/><stop offset=".38" stop-color="#eef1f4"/><stop offset=".6" stop-color="#9aa4af"/><stop offset="1" stop-color="#5f6974"/></linearGradient>
+      </defs>
+      <path d="M70 74C66 30 110 18 130 40c10-12 30-12 40 0 20-22 64-10 60 34-2 50-14 84-28 104H98C84 158 72 124 70 74z" fill="url(#pc)"/>
+      <path d="M112 50c8 10 10 22 8 34M188 50c-8 10-10 22-8 34" fill="none" stroke="rgba(10,22,40,.12)" stroke-width="3" stroke-linecap="round"/>
+      <path d="M118 192h64l-7 58h-50z" fill="url(#pt)"/>
+      <rect x="104" y="250" width="92" height="16" rx="5" fill="url(#pt)"/>
+      <path d="M110 266h80l-14 204-26 30-26-30z" fill="url(#pt)"/>
+      <g stroke="#5b6570" stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M105.4 282 L194.0 291" /><path d="M107.0 304 L192.4 313" /><path d="M108.6 326 L190.8 335" /><path d="M110.2 348 L189.2 357" /><path d="M111.8 370 L187.6 379" /><path d="M113.3 392 L186.0 401" /><path d="M114.9 414 L184.4 423" /><path d="M116.5 436 L182.8 445" /><path d="M118.1 458 L181.2 467" /></g>
+      <g stroke="#f4f6f8" stroke-width="1.5" stroke-linecap="round" opacity=".7" transform="translate(0 -3)"><path d="M105.4 282 L194.0 291" /><path d="M107.0 304 L192.4 313" /><path d="M108.6 326 L190.8 335" /><path d="M110.2 348 L189.2 357" /><path d="M111.8 370 L187.6 379" /><path d="M113.3 392 L186.0 401" /><path d="M114.9 414 L184.4 423" /><path d="M116.5 436 L182.8 445" /><path d="M118.1 458 L181.2 467" /></g>
+    </svg>
+    <div class="build__grid">
+      <div class="copy copy--stack" id="copy">
+        <div class="panel hero is-on" data-panel="0">
+          <span class="eyebrow rise">Implant &amp; cosmetic dentistry · Bajada, Davao City</span>
+          <h1 class="rise"><span>Dental implants,</span><span>built up</span><span><em>step by step.</em></span></h1>
+          <p class="rise">Capt Sky Implant Cosmetic Dentistry is a dental clinic and implant center<span class="long"> on the ground floor of the Bormaheco building</span> in Bajada. Scroll to see how an implant comes together.</p>
+          <div class="hero__cta rise">
+            <a class="btn btn--ti" href="#consult">Request a consultation<svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>+63 82 321 1911</a>
+          </div>
+          <div class="hero__facts rise">
+            <span><svg><use href="#i-pin"/></svg>Ground Floor, Bormaheco Bldg., J.P. Laurel Ave, Bajada</span>
+          </div>
+        </div>
+        <div class="panel" data-panel="1">
+          <span class="eyebrow">How an implant is built up · general information</span>
+          <ol class="steps" id="steps">
+            <li class="step" data-step="1"><span class="step__n">01 · Consultation</span><h3>First, a <em>conversation</em>.</h3><p>It usually starts with a talk and a check-up. The dentist looks at the gap, the teeth around it and the gums, and explains the options.</p></li>
+            <li class="step" data-step="2"><span class="step__n">02 · Scan</span><h3>Then, a <em>look inside</em>.</h3><p>Imaging such as X-rays or a 3D scan shows the bone underneath and where a post could sit.</p></li>
+            <li class="step" data-step="3"><span class="step__n">03 · Placement</span><h3>A titanium <em>post</em> goes in.</h3><p>A small threaded post is placed in the jawbone, and the bone is given time to heal around it.</p></li>
+            <li class="step" data-step="4"><span class="step__n">04 · Crown</span><h3>Last, the <em>crown</em>.</h3><p>A connector called an abutment joins the post, and a crown made to match the nearby teeth is fixed on top.</p></li>
+          </ol>
+          <p class="steps__note">Illustration and general information only. Every case is different, and the clinic will explain its own steps and timing at a consultation.</p>
+        </div>
+      </div>
+    </div>
+    <ol class="rail" id="rail" aria-label="Jump to a step">
+      <li><button type="button" data-go="0" class="is-on"><span>Start</span><i></i></button></li>
+      <li><button type="button" data-go="1"><span>Consult</span><i></i></button></li>
+      <li><button type="button" data-go="2"><span>Scan</span><i></i></button></li>
+      <li><button type="button" data-go="3"><span>Placement</span><i></i></button></li>
+      <li><button type="button" data-go="4"><span>Crown</span><i></i></button></li>
+    </ol>
+    <div class="chip3d" aria-hidden="true"><b>Illustration</b><span>Drag to turn</span><svg><use href="#i-rotate"/></svg></div>
+    <div class="scrollcue" aria-hidden="true"><i></i>Scroll to build it</div>
+  </div>
+</section>
+
+<!-- ============ FOLLOW-UP (their post) ============ -->
+<section class="light sec" id="follow-up">
+  <div class="wrap follow">
+    <div class="rv">
+      <span class="eyebrow">Follow-up care</span>
+      <blockquote class="quote">“Why travel to Vietnam or Thailand for dental implants when, in some cases, you may not even be able to <mark>locate your dentist when you return for follow-up care?</mark>”</blockquote>
+      <p class="quote-src">From the clinic's Facebook post</p>
+      <div class="asklist">
+        <h3>Questions worth asking any implant clinic</h3>
+        <p class="small">Tap the ones you want answered. They are added to your consultation message below.</p>
+        <div class="qbtns" id="qbtns">
+          <button class="qbtn" type="button" aria-pressed="false" data-q="Where would my follow-up visits be?"><span class="box"><svg><use href="#i-check"/></svg></span>Where would my follow-up visits be?</button>
+          <button class="qbtn" type="button" aria-pressed="false" data-q="Who do I contact if I have a concern after treatment?"><span class="box"><svg><use href="#i-check"/></svg></span>Who do I contact if I have a concern after treatment?</button>
+          <button class="qbtn" type="button" aria-pressed="false" data-q="Can I come back to the same clinic for check-ups?"><span class="box"><svg><use href="#i-check"/></svg></span>Can I come back to the same clinic for check-ups?</button>
+        </div>
+        <p class="qnote" id="qnote" aria-live="polite"></p>
+      </div>
+    </div>
+    <aside class="here rv">
+      <div class="here__img"><img src="assets/room-mono.webp" alt="An empty, white dental treatment room with a black-and-white chair (stock photo)" loading="lazy" width="1100" height="1650"><span class="cap">Concept photo.</span></div>
+      <div class="here__body">
+        <h3>The clinic is here, in Bajada.</h3>
+        <p>Capt Sky Implant Cosmetic Dentistry, Davao City.</p>
+        <div class="pin"><svg><use href="#i-pin"/></svg><span>Ground Floor, Bormaheco Bldg., J.P. Laurel Ave, Bajada, Davao City</span></div>
+        <a class="btn btn--ti" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call +63 82 321 1911</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============ CLINIC (credentials) ============ -->
+<section class="dark sec clinic" id="clinic">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">The clinic</span>
+      <h2>An implant center, <em>in its own words.</em></h2>
+    </div>
+    <div class="plaque rv" id="plaque">
+      <i class="plaque__screw"></i><i class="plaque__screw"></i><i class="plaque__screw"></i><i class="plaque__screw"></i>
+      <blockquote>“The 1st &amp; biggest Dental Clinic &amp; Implant Center in Mindanao”</blockquote>
+      <div class="plaque__by"><span>As described by the clinic</span>Capt Sky Implant Cosmetic Dentistry</div>
+    </div>
+    <div class="tiles">
+      <div class="tile rv"><svg><use href="#i-implant"/></svg><h3>Dental implants</h3><p>A dental clinic and implant center, with implants in its name.</p><small>Implant center</small></div>
+      <div class="tile rv"><svg><use href="#i-spark"/></svg><h3>Cosmetic dentistry</h3><p>Listed on Facebook under the category Cosmetic Dentist.</p><small>Cosmetic Dentist</small></div>
+      <div class="tile rv"><svg><use href="#i-door"/></svg><h3>Ground floor, Bajada</h3><p>Bormaheco building, J.P. Laurel Ave, fronting the former Durian Hotel, beside Chinabank.</p><small>Davao City</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FULL ARCH ============ -->
+<section class="arch sec light" id="full-arch">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">One tooth to a full arch · the clinic has posted about All-on-4</span>
+      <h2>One gap, a few, <em>or a whole arch.</em></h2>
+      <p class="lead">Implants can hold one crown, a short bridge, or a full row of teeth. Choose a case to see how it generally works.</p>
+    </div>
+    <div class="arch__grid">
+      <div class="rv">
+        <div class="tabs" role="tablist" aria-label="Implant cases">
+          <button role="tab" id="tab-single" aria-controls="ap-single" aria-selected="true" tabindex="0" data-mode="single">One tooth</button>
+          <button role="tab" id="tab-few" aria-controls="ap-few" aria-selected="false" tabindex="-1" data-mode="few">A few teeth</button>
+          <button role="tab" id="tab-full" aria-controls="ap-full" aria-selected="false" tabindex="-1" data-mode="full">Full arch</button>
+        </div>
+        <div class="apanel" role="tabpanel" id="ap-single" aria-labelledby="tab-single">
+          <h3>One missing tooth</h3>
+          <p>A single implant post stands in for the root of the missing tooth, and one crown sits on top. The teeth on either side are left as they are.</p>
+          <ul><li>One post, one abutment, one crown</li><li>Built up in the steps shown at the top of this page</li></ul>
+          <a class="btn btn--ink" href="#consult" data-ask="Dental implant (one tooth)">Ask about one tooth<svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="apanel" role="tabpanel" id="ap-few" aria-labelledby="tab-few" hidden>
+          <h3>A few teeth in a row</h3>
+          <p>Where several neighbouring teeth are missing, a short bridge can sometimes rest on two implants instead of one implant for every tooth.</p>
+          <ul><li>Fewer posts than missing teeth</li><li>Whether it suits a case is decided after an exam and imaging</li></ul>
+          <a class="btn btn--ink" href="#consult" data-ask="Several missing teeth">Ask about a few teeth<svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="apanel" role="tabpanel" id="ap-full" aria-labelledby="tab-full" hidden>
+          <h3>A full arch (All-on-4)</h3>
+          <p>A full-arch restoration replaces a whole row of teeth with one fixed bridge held by a small number of implants. “All-on-4” is the name of a well-known way of doing this, with four implants in one arch, the back two often set at an angle.</p>
+          <ul><li>One fixed bridge for the whole arch</li><li>Only a dentist can say whether it suits you</li></ul>
+          <a class="btn btn--ink" href="#consult" data-ask="Full arch / All-on-4">Ask about All-on-4<svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      <figure class="archfig rv">
+        <svg viewBox="0 0 420 330" id="archsvg" data-mode="single" role="img" aria-label="Illustration: a lower arch of teeth seen from above, showing where implants could sit for the chosen case">
+          <path class="gumline" d="M55.4 100.7 A158 236 0 0 0 364.6 100.7"/>
+          <rect id="tr0" class="tooth" x="-12.9" y="-15.0" width="25.8" height="30.0" rx="9.8" transform="translate(223.9 287.1) rotate(172.5)"/>
+<rect id="tr1" class="tooth" x="-12.0" y="-16.1" width="23.9" height="32.2" rx="9.1" transform="translate(250.2 280.2) rotate(158.5)"/>
+<rect id="tr2" class="tooth" x="-14.3" y="-17.2" width="28.5" height="34.4" rx="10.8" transform="translate(276.8 265.9) rotate(145.1)"/>
+<rect id="tr3" class="tooth" x="-14.7" y="-18.3" width="29.4" height="36.6" rx="11.2" transform="translate(303.6 242.1) rotate(132.3)"/>
+<rect id="tr4" class="tooth" x="-14.7" y="-19.4" width="29.4" height="38.8" rx="11.2" transform="translate(327.2 210.3) rotate(121.2)"/>
+<rect id="tr5" class="tooth" x="-21.2" y="-20.5" width="42.3" height="41.0" rx="15.6" transform="translate(349.4 163.2) rotate(109.7)"/>
+<rect id="tr6" class="tooth" x="-20.2" y="-21.6" width="40.5" height="43.2" rx="15.4" transform="translate(364.6 100.7) rotate(98.0)"/>
+<rect id="tl0" class="tooth" x="-12.9" y="-15.0" width="25.8" height="30.0" rx="9.8" transform="translate(196.1 287.1) rotate(7.5)"/>
+<rect id="tl1" class="tooth" x="-12.0" y="-16.1" width="23.9" height="32.2" rx="9.1" transform="translate(169.8 280.2) rotate(21.5)"/>
+<rect id="tl2" class="tooth" x="-14.3" y="-17.2" width="28.5" height="34.4" rx="10.8" transform="translate(143.2 265.9) rotate(34.9)"/>
+<rect id="tl3" class="tooth" x="-14.7" y="-18.3" width="29.4" height="36.6" rx="11.2" transform="translate(116.4 242.1) rotate(47.7)"/>
+<rect id="tl4" class="tooth" x="-14.7" y="-19.4" width="29.4" height="38.8" rx="11.2" transform="translate(92.8 210.3) rotate(58.8)"/>
+<rect id="tl5" class="tooth" x="-21.2" y="-20.5" width="42.3" height="41.0" rx="15.6" transform="translate(70.6 163.2) rotate(70.3)"/>
+<rect id="tl6" class="tooth" x="-20.2" y="-21.6" width="40.5" height="43.2" rx="15.4" transform="translate(55.4 100.7) rotate(82.0)"/>
+          <path class="bridge m-few" d="M303.6 242.1 A158 236 0 0 0 349.4 163.2" style="stroke-width:46;stroke:rgba(69,216,200,.16);stroke-dasharray:none;stroke-linecap:round"/>
+          <path class="bridge m-full" d="M55.4 100.7 A158 236 0 0 0 364.6 100.7" style="stroke-width:50;stroke:rgba(69,216,200,.14);stroke-dasharray:none;stroke-linecap:round"/>
+          <path class="bridge m-full" d="M55.4 100.7 A158 236 0 0 0 364.6 100.7" transform="translate(0 0)"/>
+          <g class="imp m-single"><circle class="o" cx="349.4" cy="163.2" r="13"/><circle class="c" cx="349.4" cy="163.2" r="7"/></g>
+          <g class="imp m-few"><circle class="o" cx="303.6" cy="242.1" r="12"/><circle class="c" cx="303.6" cy="242.1" r="6.5"/></g>
+          <g class="imp m-few"><circle class="o" cx="349.4" cy="163.2" r="12"/><circle class="c" cx="349.4" cy="163.2" r="6.5"/></g>
+          <g class="imp m-full"><circle class="o" cx="250.2" cy="280.2" r="11"/><circle class="c" cx="250.2" cy="280.2" r="6"/></g>
+          <g class="imp m-full"><circle class="o" cx="169.8" cy="280.2" r="11"/><circle class="c" cx="169.8" cy="280.2" r="6"/></g>
+          <g class="imp m-full"><line x1="327.2" y1="210.3" x2="314" y2="234"/><circle class="o" cx="327.2" cy="210.3" r="11"/><circle class="c" cx="327.2" cy="210.3" r="6"/></g>
+          <g class="imp m-full"><line x1="92.8" y1="210.3" x2="106" y2="234"/><circle class="o" cx="92.8" cy="210.3" r="11"/><circle class="c" cx="92.8" cy="210.3" r="6"/></g>
+          <text class="lbl m-single" x="300" y="128">1 implant</text>
+          <text class="lbl m-few" x="250" y="168">2 implants · 3 teeth</text>
+          <text class="lbl m-full" x="210" y="170" text-anchor="middle">4 implants · full arch</text>
+          <text class="lbl" x="210" y="24" text-anchor="middle" style="opacity:1;fill:rgba(238,241,244,.4)">Lower arch, seen from above</text>
+        </svg>
+        <figcaption><b>Illustration</b><span>General information, not a treatment plan.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="light sec" id="gallery">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Gallery</span>
+      <h2>Steel and white, <em>for now.</em></h2>
+      <p class="lead">Concept photos that show the feel of the page. The clinic's own photos would go here.</p>
+    </div>
+    <div class="gal" id="gal">
+      <button class="g1 rv" type="button" data-src="assets/room-mono.webp" data-alt="An empty dental treatment room with a black-and-white chair"><img src="assets/room-mono.webp" alt="An empty dental treatment room with a black-and-white chair" loading="lazy"><span class="cap">Concept photo.</span></button>
+      <button class="g2 rv" type="button" data-src="assets/handpieces.webp" data-alt="Silver dental handpieces in their holder"><img src="assets/handpieces.webp" alt="Silver dental handpieces in their holder" loading="lazy"><span class="cap">Concept photo.</span></button>
+      <button class="g3 rv" type="button" data-src="assets/lamp-detail.webp" data-alt="A dental light on its arm by a window"><img src="assets/lamp-detail.webp" alt="A dental light on its arm by a window" loading="lazy"><span class="cap">Concept photo.</span></button>
+      <button class="g4 rv" type="button" data-src="assets/tray-detail.webp" data-alt="Stainless-steel trays under the instrument holder"><img src="assets/tray-detail.webp" alt="Stainless-steel trays under the instrument holder" loading="lazy"><span class="cap">Concept photo.</span></button>
+      <button class="g5 rv" type="button" data-src="assets/chair-blue.webp" data-alt="An empty blue dental chair and stool"><img src="assets/chair-blue.webp" alt="An empty blue dental chair and stool" loading="lazy"><span class="cap">Concept photo.</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONSULT HELPER ============ -->
+<section class="dark sec consult" id="consult">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Request a consultation</span>
+      <h2>Four taps, <em>one clear message.</em></h2>
+      <p class="lead">Pick what you'd like to ask about. The page writes the email for you to send to the clinic.</p>
+    </div>
+    <div class="helper rv" id="helper">
+      <div class="helper__side">
+        <ol class="hsteps" id="hsteps"><li class="is-on">Topic</li><li>Timing</li><li>Details</li><li>Reply</li></ol>
+        <p>Choices only. Nothing is typed into this page, and nothing is sent or stored by it.</p>
+      </div>
+      <div class="helper__main">
+        <div class="hpane" data-h="0">
+          <h3>What would you like to ask about?</h3>
+          <p class="sub">Pick one.</p>
+          <div class="opts" data-key="topic" data-single>
+            <button class="opt" type="button" aria-pressed="false" data-v="Dental implant (one tooth)">Dental implant<small>one tooth</small></button>
+            <button class="opt" type="button" aria-pressed="false" data-v="Several missing teeth">Several missing teeth<small>a few in a row</small></button>
+            <button class="opt" type="button" aria-pressed="false" data-v="Full arch / All-on-4">Full arch<small>All-on-4</small></button>
+            <button class="opt" type="button" aria-pressed="false" data-v="Cosmetic dentistry">Cosmetic dentistry<small>how my smile looks</small></button>
+            <button class="opt" type="button" aria-pressed="false" data-v="Not sure yet, I'd like a check-up first">Not sure yet<small>a check-up first</small></button>
+          </div>
+        </div>
+        <div class="hpane" data-h="1" hidden>
+          <h3>When are you hoping to come in?</h3>
+          <p class="sub">A rough idea is fine.</p>
+          <div class="opts" data-key="when" data-single>
+            <button class="opt" type="button" aria-pressed="false" data-v="As soon as possible">As soon as possible</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="Within the next month">Within the next month</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="In the next few months">In the next few months</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="I'm still gathering information">Just gathering information</button>
+          </div>
+        </div>
+        <div class="hpane" data-h="2" hidden>
+          <h3>Anything the clinic should know?</h3>
+          <p class="sub">Pick any, or none.</p>
+          <div class="opts" data-key="extra">
+            <button class="opt" type="button" aria-pressed="false" data-v="I'm coming from outside Davao City.">I'm coming from outside Davao City</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="I have X-rays or scans from another clinic.">I have X-rays or scans from another clinic</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="I'd like to know about follow-up visits.">I'd like to know about follow-up visits</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="I'm comparing having it done here or abroad.">I'm comparing here and abroad</button>
+          </div>
+          <p class="qnote" id="hq" style="color:var(--aqua)"></p>
+        </div>
+        <div class="hpane" data-h="3" hidden>
+          <h3>How should the clinic reply?</h3>
+          <p class="sub">You'll add your own details in your email app.</p>
+          <div class="opts" data-key="reply" data-single>
+            <button class="opt" type="button" aria-pressed="false" data-v="email">Reply to my email</button>
+            <button class="opt" type="button" aria-pressed="false" data-v="call">Call me back<small>you'll add your number</small></button>
+            <button class="opt" type="button" aria-pressed="false" data-v="either">Either is fine</button>
+          </div>
+        </div>
+        <div class="hpane" data-h="4" hidden>
+          <h3>Your message is ready.</h3>
+          <div class="msg" id="msg" aria-live="polite"></div>
+          <div class="hnav" style="padding-top:18px;margin-top:0">
+            <a class="btn btn--aqua" id="send" href="mailto:drcarloscapitan@gmail.com"><svg class="i"><use href="#i-mail"/></svg>Open my email app</a>
+            <a class="btn btn--ghost" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call instead</a>
+            <button class="btn btn--ghost" type="button" id="copyMsg"><svg class="i"><use href="#i-copy"/></svg><span>Copy message</span></button>
+            <button class="btn btn--ghost" type="button" id="restart">Start again</button>
+          </div>
+          <p class="privacy"><svg><use href="#i-lock"/></svg>This opens your own email app. Nothing is sent or stored by this page.</p>
+        </div>
+        <div class="hnav" id="hnav">
+          <button class="btn btn--ghost" type="button" id="hBack" disabled><svg class="i"><use href="#i-back"/></svg>Back</button>
+          <button class="btn btn--ti" type="button" id="hNext" disabled>Next<svg class="i"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="nojs-contact">
+      <a class="btn btn--ti" href="mailto:drcarloscapitan@gmail.com?subject=Consultation%20request"><svg class="i"><use href="#i-mail"/></svg>Email drcarloscapitan@gmail.com</a>
+      <a class="btn btn--ghost" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call +63 82 321 1911</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="light sec" id="faq">
+  <div class="wrap faq__grid">
+    <div class="faq__aside rv">
+      <span class="eyebrow">Questions</span>
+      <h2>Plain <em>answers.</em></h2>
+      <p class="lead">Short answers to common questions. For anything about your own teeth, ask the clinic directly.</p>
+      <a class="btn btn--ink" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call +63 82 321 1911</a>
+    </div>
+    <div class="faq__list rv">
+      <details><summary>Where is the clinic?<span class="pm"></span></summary><div class="ans"><p>On the ground floor of the Bormaheco building, J.P. Laurel Ave, Bajada, Davao City, fronting the former Durian Hotel, beside Chinabank.</p></div></details>
+      <details><summary>What is a dental implant?<span class="pm"></span></summary><div class="ans"><p>In general terms, a small post, usually titanium, placed in the jawbone to stand in for a tooth root. An abutment joins it to a crown on top. The 3D illustration at the top of the page shows the parts.</p></div></details>
+      <details><summary>Do you do All-on-4?<span class="pm"></span></summary><div class="ans"><p>The clinic has posted about All-on-4. Whether it suits you can only be decided at a consultation, so please <a href="#consult">request one</a> or call.</p></div></details>
+      <details><summary>How much does an implant cost?<span class="pm"></span></summary><div class="ans"><p>Prices aren't listed on this page. Every case is different, so please ask the clinic: call <a href="tel:+63823211911">+63 82 321 1911</a> or email <a href="mailto:drcarloscapitan@gmail.com">drcarloscapitan@gmail.com</a>.</p></div></details>
+      <details><summary>How long does the whole process take?<span class="pm"></span></summary><div class="ans"><p>It depends on the person and the case. The clinic will explain the timing after a check-up.</p></div></details>
+      <details><summary>Can I come back for follow-up care?<span class="pm"></span></summary><div class="ans"><p>Please ask the clinic about follow-up visits when you get in touch. The consultation helper can add that question to your message for you.</p></div></details>
+      <details><summary>What's the best way to reach the clinic?<span class="pm"></span></summary><div class="ans"><p>Call <a href="tel:+63823211911">+63 82 321 1911</a>, call the mobile <a href="tel:+639770182996">+63 977 018 2996</a>, or email <a href="mailto:drcarloscapitan@gmail.com">drcarloscapitan@gmail.com</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit sec" id="visit">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Visit</span>
+      <h2>Find us in <em>Bajada.</em></h2>
+    </div>
+    <div class="visit__grid">
+      <div class="addr rv">
+        <span class="tag"><i></i>Capt Sky Implant Cosmetic Dentistry</span>
+        <p class="big">Ground Floor, Bormaheco Bldg., J.P. Laurel Ave, Bajada, Davao City</p>
+        <p class="land"><b>Landmark</b>“fronting former Durian Hotel beside Chinabank”</p>
+        <div class="acts">
+          <a class="btn btn--ink" href="https://www.google.com/maps/search/?api=1&amp;query=Capt%20Sky%20Implant%20Cosmetic%20Dentistry%2C%20Davao%20City" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Get directions</a>
+          <button class="btn btn--line cp-addr" type="button" id="copyAddr"><svg class="i"><use href="#i-copy"/></svg><span>Copy address</span></button>
+          <a class="btn btn--line" href="tel:+63823211911"><svg class="i"><use href="#i-phone"/></svg>Call</a>
+        </div>
+      </div>
+      <div class="map rv" id="map">
+        <div class="map__ph">
+          <span class="dot" aria-hidden="true"></span>
+          <strong>Bajada, Davao City</strong>
+          <p>The map loads only when you ask for it, to keep this page light.</p>
+          <button class="btn btn--ti" type="button" id="showMap"><svg class="i"><use href="#i-pin"/></svg>Show map</button>
+          <noscript><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Capt%20Sky%20Implant%20Cosmetic%20Dentistry%2C%20Davao%20City" style="color:#45d8c8">Open in Google Maps</a></p></noscript>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="dark sec" id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <span class="eyebrow">Contact</span>
+      <h2>Start with <em>a call.</em></h2>
+      <p class="lead">Ask about implants, a full arch or cosmetic dentistry at Capt Sky Implant Cosmetic Dentistry.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px">
+        <a class="btn btn--ti" href="#consult">Request a consultation<svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="clist rv">
+      <div class="crow"><svg><use href="#i-phone"/></svg><div><small>Phone</small><a href="tel:+63823211911">+63 82 321 1911</a></div><button class="cp" type="button" data-copy="+63 82 321 1911">Copy</button></div>
+      <div class="crow"><svg><use href="#i-phone"/></svg><div><small>Mobile</small><a href="tel:+639770182996">+63 977 018 2996</a></div><button class="cp" type="button" data-copy="+63 977 018 2996">Copy</button></div>
+      <div class="crow"><svg><use href="#i-mail"/></svg><div><small>Email</small><a href="mailto:drcarloscapitan@gmail.com">drcarloscapitan@gmail.com</a></div><button class="cp" type="button" data-copy="drcarloscapitan@gmail.com">Copy</button></div>
+      <div class="crow"><svg><use href="#i-pin"/></svg><div><small>Facebook</small><span class="v">facebook.com/philippinedentalimplant</span></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#top" style="color:var(--on-navy)"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="rgba(195,202,211,.35)"/><use href="#i-implant" x="4" y="3" width="32" height="32" style="color:#e4e8ec"/></svg><span><b>CAPT SKY</b><small>Implant Cosmetic Dentistry · Bajada, Davao City</small></span></a>
+      <nav aria-label="Footer"><a href="#build">How it's built</a><a href="#follow-up">Follow-up</a><a href="#clinic">The clinic</a><a href="#full-arch">Full arch</a><a href="#gallery">Gallery</a><a href="#consult">Consult</a><a href="#faq">FAQ</a><a href="#visit">Visit</a></nav>
+    </div>
+    <div class="foot__legal">
+      <strong>Concept redesign by Jeig Torio · not the business's official website</strong>
+      <span>Photos are stock concept placeholders, not the clinic's rooms, equipment or work. The 3D implant and the arch drawing are illustrations.</span>
+      <span>This page gives general information only, not dental advice. Please ask the clinic about your own case.</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="cbar" aria-label="Quick contact">
+  <a href="tel:+63823211911"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="mailto:drcarloscapitan@gmail.com"><svg><use href="#i-mail"/></svg>Email</a>
+  <a class="is-main" href="#consult"><svg><use href="#i-arrow"/></svg>Consult</a>
+</nav>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Gallery" aria-hidden="true">
+  <span class="lb__count" id="lbCount"></span>
+  <figure><img id="lbImg" draggable="false" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt=""><figcaption>Concept photo.</figcaption></figure>
+  <button class="lb__btn lb__close" type="button" aria-label="Close"><svg class="i"><use href="#i-x"/></svg></button>
+  <button class="lb__btn lb__prev" type="button" aria-label="Previous photo"><svg class="i"><use href="#i-back"/></svg></button>
+  <button class="lb__btn lb__next" type="button" aria-label="Next photo"><svg class="i"><use href="#i-arrow"/></svg></button>
+</div>
+
+<script>
+(()=>{
+const D=document,R=D.documentElement,$=(s,c=D)=>c.querySelector(s),$$=(s,c=D)=>[...c.querySelectorAll(s)];
+const reduce=R.classList.contains('rm');
+const EMAIL='drcarloscapitan@gmail.com',TEL='+63823211911',NAME='Capt Sky Implant Cosmetic Dentistry';
+
+/* nav, menu, progress */
+const nav=$('#nav'),prog=$('.progress'),burger=$('.burger');
+burger.addEventListener('click',()=>{const o=R.classList.toggle('menu-open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',o?'Close menu':'Open menu')});
+$$('.sheet a').forEach(a=>a.addEventListener('click',()=>{R.classList.remove('menu-open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label','Open menu')}));
+D.addEventListener('keydown',e=>{if(e.key==='Escape'&&R.classList.contains('menu-open'))burger.click()});
+
+/* build section: scroll progress shared with the 3D module */
+const build=$('#build'),panels=$$('.panel',build),steps=$$('.step',build),railBtns=$$('#rail button');
+window.__build={p:0,step:0};
+const BOUNDS=[0,.1,.3,.5,.72];  // start of each phase: hero, consult, scan, placement, crown
+function stepOf(p){let s=0;for(let i=0;i<BOUNDS.length;i++)if(p>=BOUNDS[i]-0.0001)s=i;return s}
+let lastStep=-1;
+function setStep(s){
+  if(s===lastStep)return;lastStep=s;window.__build.step=s;
+  panels[0].classList.toggle('is-on',s===0);panels[1].classList.toggle('is-on',s>0);
+  steps.forEach((el,i)=>{const on=i===s-1;el.classList.toggle('is-on',on);el.setAttribute('aria-hidden',on?'false':'true')});
+  railBtns.forEach((b,i)=>b.classList.toggle('is-on',i===s));
+  build.classList.toggle('past-hero',s>0);
+}
+function onScroll(){
+  const y=scrollY,h=R.scrollHeight-innerHeight;
+  prog.style.transform=`scaleX(${h>0?y/h:0})`;
+  nav.classList.toggle('is-scrolled',y>30);
+  if(!reduce){
+    const r=build.getBoundingClientRect(),len=build.offsetHeight-innerHeight;
+    const p=len>0?Math.min(1,Math.max(0,-r.top/len)):0;
+    window.__build.p=p;setStep(stepOf(p));
+  }
+}
+if(!reduce){
+  // steps behave as stacked cards: style hidden ones
+  const st=D.createElement('style');st.textContent='.js:not(.rm) .step{transition:opacity .55s var(--ease),transform .55s var(--ease)}.js:not(.rm) .step:not(.is-on){opacity:0;transform:translateY(14px);visibility:hidden;transition:opacity .35s,transform .35s,visibility 0s .35s}';D.head.appendChild(st);
+  railBtns.forEach((b,i)=>b.addEventListener('click',()=>{
+    const len=build.offsetHeight-innerHeight;const target=build.offsetTop+len*(i===0?0:BOUNDS[i]+(i===4?.2:.08));
+    scrollTo({top:target,behavior:'smooth'});
+  }));
+}else{window.__build.p=1;window.__build.step=4}
+addEventListener('scroll',onScroll,{passive:true});addEventListener('resize',onScroll);onScroll();setStep(reduce?4:stepOf(window.__build.p));
+if(reduce){panels.forEach(p=>p.classList.add('is-on'))}
+
+/* reveal */
+if(!reduce&&'IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.rv').forEach(el=>io.observe(el));
+}else $$('.rv').forEach(el=>el.classList.add('in'));
+
+/* plaque light follows pointer */
+const plaque=$('#plaque');
+plaque.addEventListener('pointermove',e=>{const r=plaque.getBoundingClientRect();plaque.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');plaque.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%')});
+
+/* copy helper */
+async function copyText(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const ta=D.createElement('textarea');ta.value=t;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';D.body.appendChild(ta);ta.select();let ok=false;try{ok=D.execCommand('copy')}catch(_){}ta.remove();return ok}}
+function flash(btn,label,done){const sp=btn.querySelector('span')||btn;const old=sp.textContent;copyText(label).then(()=>{sp.textContent=done||'Copied';btn.classList.add('is-done');setTimeout(()=>{sp.textContent=old;btn.classList.remove('is-done')},1800)})}
+$$('.cp').forEach(b=>b.addEventListener('click',()=>flash(b,b.dataset.copy)));
+$('#copyAddr').addEventListener('click',e=>flash(e.currentTarget,'Capt Sky Implant Cosmetic Dentistry, Ground Floor, Bormaheco Bldg., J.P. Laurel Ave, Bajada, Davao City','Copied'));
+
+/* follow-up questions -> helper */
+const chosenQ=new Set();const qnote=$('#qnote'),hq=$('#hq');
+function qText(){return chosenQ.size?`${chosenQ.size} follow-up question${chosenQ.size>1?'s':''} will be added to your message.`:''}
+$$('.qbtn').forEach(b=>b.addEventListener('click',()=>{
+  const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);
+  on?chosenQ.add(b.dataset.q):chosenQ.delete(b.dataset.q);
+  qnote.textContent=chosenQ.size?qText()+' ':'';hq.textContent=qText();
+  if(chosenQ.size&&!qnote.querySelector('a')){const a=D.createElement('a');a.href='#consult';a.textContent='Go to the consultation helper';a.style.color='inherit';qnote.appendChild(a)}
+}));
+
+/* arch explorer tabs */
+const tabs=$$('[role=tab]'),archsvg=$('#archsvg');
+function selTab(t,focus){tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;$('#'+x.getAttribute('aria-controls')).hidden=!on});archsvg.dataset.mode=t.dataset.mode;if(focus)t.focus()}
+tabs.forEach((t,i)=>{t.addEventListener('click',()=>selTab(t));t.addEventListener('keydown',e=>{let j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;if(e.key==='Home')j=0;if(e.key==='End')j=tabs.length-1;if(j!==null){e.preventDefault();selTab(tabs[j],true)}})});
+
+/* consult helper */
+const panes=$$('.hpane'),hsteps=$$('#hsteps li'),back=$('#hBack'),next=$('#hNext'),hnav=$('#hnav');
+const state={topic:null,when:null,extra:new Set(),reply:null};let cur=0;
+const keys=['topic','when','extra','reply'];
+function canNext(){const k=keys[cur];if(k==='extra')return true;return !!state[k]}
+function show(i){cur=i;panes.forEach((p,j)=>p.hidden=j!==i);hsteps.forEach((li,j)=>{li.classList.toggle('is-on',j===Math.min(i,3)&&i<4);li.classList.toggle('is-done',j<i)});
+  back.disabled=i===0;next.disabled=!canNext();hnav.style.display=i===4?'none':'';next.innerHTML=(i===3?'Write my message':'Next')+'<svg class="i"><use href="#i-arrow"/></svg>';
+  if(i===4)compose();}
+$$('.opts').forEach(g=>{const k=g.dataset.key,single=g.hasAttribute('data-single');
+  $$('.opt',g).forEach(b=>b.addEventListener('click',()=>{
+    if(single){$$('.opt',g).forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');state[k]=b.dataset.v}
+    else{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);on?state[k].add(b.dataset.v):state[k].delete(b.dataset.v)}
+    next.disabled=!canNext();
+  }))});
+next.addEventListener('click',()=>{if(canNext()&&cur<4)show(cur+1)});
+back.addEventListener('click',()=>{if(cur>0)show(cur-1)});
+let mail={subject:'',body:''};
+function compose(){
+  const lines=[`Hello ${NAME},`,'',`I'd like to request a consultation about: ${state.topic}.`,`Timing: ${state.when}.`];
+  if(state.extra.size){lines.push('');state.extra.forEach(x=>lines.push(x))}
+  if(chosenQ.size){lines.push('','My follow-up care questions:');chosenQ.forEach(q=>lines.push('- '+q))}
+  lines.push('');
+  if(state.reply==='email')lines.push('Please reply to this email.');
+  else if(state.reply==='call')lines.push('Please call me back on: [my number]');
+  else lines.push('You can reply to this email or call me on: [my number]');
+  lines.push('','Thank you.');
+  mail.subject=`Consultation request: ${state.topic}`;mail.body=lines.join('\n');
+  $('#msg').innerHTML='';const b=D.createElement('b');b.textContent='To: '+EMAIL+' · Subject: '+mail.subject;$('#msg').append(b,D.createTextNode(mail.body));
+  $('#send').href=`mailto:${EMAIL}?subject=${encodeURIComponent(mail.subject)}&body=${encodeURIComponent(mail.body)}`;
+}
+$('#copyMsg').addEventListener('click',e=>flash(e.currentTarget,`To: ${EMAIL}\nSubject: ${mail.subject}\n\n${mail.body}`,'Copied'));
+$('#restart').addEventListener('click',()=>{state.topic=state.when=state.reply=null;state.extra.clear();$$('.opt').forEach(x=>x.setAttribute('aria-pressed','false'));show(0)});
+$$('[data-ask]').forEach(a=>a.addEventListener('click',()=>{const v=a.dataset.ask;const g=$('.opts[data-key=topic]');$$('.opt',g).forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===v)));state.topic=v;show(1)}));
+show(0);
+
+/* gallery lightbox */
+const items=$$('#gal button'),lb=$('#lb'),lbImg=$('#lbImg'),lbCount=$('#lbCount');let li=0,lastFocus=null;
+function openLb(i){li=(i+items.length)%items.length;const it=items[li];lbImg.src=it.dataset.src;lbImg.alt=it.dataset.alt;lbCount.textContent=`${String(li+1).padStart(2,'0')} / ${String(items.length).padStart(2,'0')}`;if(!lb.classList.contains('is-open')){lastFocus=D.activeElement;lb.classList.add('is-open');lb.setAttribute('aria-hidden','false');D.body.style.overflow='hidden';$('.lb__close').focus()}}
+function closeLb(){lb.classList.remove('is-open');lb.setAttribute('aria-hidden','true');D.body.style.overflow='';lastFocus&&lastFocus.focus()}
+items.forEach((b,i)=>b.addEventListener('click',()=>openLb(i)));
+$('.lb__close').addEventListener('click',closeLb);$('.lb__prev').addEventListener('click',()=>openLb(li-1));$('.lb__next').addEventListener('click',()=>openLb(li+1));
+lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+D.addEventListener('keydown',e=>{if(!lb.classList.contains('is-open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')openLb(li+1);if(e.key==='ArrowLeft')openLb(li-1);
+  if(e.key==='Tab'){const f=$$('.lb__btn');const a=f.indexOf(D.activeElement);e.preventDefault();f[(a+(e.shiftKey?-1:1)+f.length)%f.length].focus()}});
+let sx=null;lb.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)openLb(li+(dx<0?1:-1));sx=null});
+
+/* tap-to-load map */
+$('#showMap').addEventListener('click',()=>{const m=$('#map');if(m.querySelector('iframe'))return;const f=D.createElement('iframe');f.title='Map: Capt Sky Implant Cosmetic Dentistry, Davao City';f.referrerPolicy='no-referrer-when-downgrade';f.src='https://www.google.com/maps?q='+encodeURIComponent('Capt Sky Implant Cosmetic Dentistry, Davao City')+'&output=embed';m.appendChild(f);m.classList.add('is-on')});
+})();
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
+import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const canvas=document.getElementById('implant3d'),stage=document.getElementById('stage');
+const reduce=document.documentElement.classList.contains('rm');
+let renderer;
+try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true,powerPreference:'high-performance'})}catch(e){renderer=null}
+if(renderer){
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;
+renderer.outputColorSpace=THREE.SRGBColorSpace;
+const scene=new THREE.Scene();
+const pmrem=new THREE.PMREMGenerator(renderer);
+scene.environment=pmrem.fromScene(new RoomEnvironment(),0.04).texture;
+scene.environmentIntensity=0.85;
+const camera=new THREE.PerspectiveCamera(30,1,0.1,100);
+
+const key=new THREE.DirectionalLight(0xfff4e6,2.4);key.position.set(3,6,5);scene.add(key);
+const rim=new THREE.DirectionalLight(0x45d8c8,1.6);rim.position.set(-5,2,-4);scene.add(rim);
+const fill=new THREE.DirectionalLight(0xb8c6ff,.5);fill.position.set(-4,-1,4);scene.add(fill);
+
+const root=new THREE.Group();scene.add(root);
+const spin=new THREE.Group();root.add(spin);
+
+/* materials */
+const ti=new THREE.MeshPhysicalMaterial({color:0xaab3bd,metalness:1,roughness:.3,anisotropy:.7,anisotropyRotation:Math.PI/2,clearcoat:.15});
+const tiDark=new THREE.MeshPhysicalMaterial({color:0x9aa4af,metalness:1,roughness:.34});
+const ceramic=new THREE.MeshPhysicalMaterial({color:0xf5f0e6,roughness:.24,clearcoat:1,clearcoatRoughness:.1,sheen:.5,sheenColor:new THREE.Color(0xffffff),sheenRoughness:.4});
+const enamel=new THREE.MeshPhysicalMaterial({color:0xece5d8,roughness:.38,clearcoat:.6,clearcoatRoughness:.25});
+const root_m=new THREE.MeshPhysicalMaterial({color:0xe3d9c6,roughness:.6,transparent:true,opacity:.75});
+const bone=new THREE.MeshPhysicalMaterial({color:0xdcd5c9,roughness:.5,metalness:0,transparent:true,opacity:.2,depthWrite:false});
+const gum=new THREE.MeshPhysicalMaterial({color:0xd5a9ae,roughness:.5,transparent:true,opacity:.42,depthWrite:false});
+const edgeM=new THREE.LineBasicMaterial({color:0xc3cad3,transparent:true,opacity:.35});
+
+/* crown geometry: a sphere shaped into a molar crown */
+function crownGeo(w=.9,h=.82){
+  const g=new THREE.SphereGeometry(.5,72,56);const p=g.attributes.position,v=new THREE.Vector3();
+  const cusps=[[.2,.18],[-.2,.18],[.2,-.18],[-.2,-.18]];
+  for(let i=0;i<p.count;i++){
+    v.fromBufferAttribute(p,i);
+    let y=v.y; // -.5..5
+    // body: squarer silhouette
+    const t=(y+.5);// 0..1
+    let s=1;
+    if(y<0){s=.62+.38*Math.sin(Math.min(1,t*2)*Math.PI/2);} // narrower toward the margin
+    let x=v.x*s,z=v.z*s*.92;
+    const len=Math.hypot(v.x,v.z);
+    if(len>0.001){const k=Math.pow(Math.max(Math.abs(v.x),Math.abs(v.z))/len,.6);x/=k*.9+.1;z/=k*.9+.1;x*=.92;z*=.92}
+    if(y>0){ // flatten top + cusps + central groove
+      y=y*.62;
+      let bump=0;for(const c of cusps){const d=(x-c[0])**2+(z-c[1])**2;bump+=Math.exp(-d/.018)*.09}
+      const groove=Math.exp(-(x*x)/.004)*.05+Math.exp(-(z*z)/.004)*.04;
+      y+=bump-groove*Math.min(1,y*6);
+    }
+    p.setXYZ(i,x*w,y*h*1.15,z*w);
+  }
+  g.computeVertexNormals();return g;
+}
+/* post: lathe core + helical thread */
+const POST_LEN=1.2,R_TOP=.2,R_BOT=.14;
+function postGroup(){
+  const g=new THREE.Group();
+  const prof=[];prof.push(new THREE.Vector2(0,-POST_LEN-.06));
+  for(let i=0;i<=8;i++){const a=i/8*Math.PI/2;prof.push(new THREE.Vector2(Math.sin(a)*R_BOT*.8,-POST_LEN-.06+ (1-Math.cos(a))*.1))}
+  prof.push(new THREE.Vector2(R_TOP-.02,-.06),new THREE.Vector2(R_TOP+.01,-.03),new THREE.Vector2(R_TOP+.01,0),new THREE.Vector2(.09,0),new THREE.Vector2(.09,-.05),new THREE.Vector2(0,-.05));
+  g.add(new THREE.Mesh(new THREE.LatheGeometry(prof,72),ti));
+  class Helix extends THREE.Curve{getPoint(t,o=new THREE.Vector3()){const turns=11,a=t*turns*Math.PI*2,y=-.12-t*(POST_LEN-.2),r=(R_TOP-(R_TOP-R_BOT)*t)-.005;return o.set(Math.cos(a)*r,y,Math.sin(a)*r)}}
+  g.add(new THREE.Mesh(new THREE.TubeGeometry(new Helix(),900,.032,8,false),ti));
+  // hex socket hint on top
+  const hex=new THREE.Mesh(new THREE.CylinderGeometry(.085,.085,.02,6),tiDark);hex.position.y=-.035;g.add(hex);
+  return g;
+}
+function abutmentGroup(){
+  const g=new THREE.Group();
+  const prof=[new THREE.Vector2(0,0),new THREE.Vector2(.19,0),new THREE.Vector2(.215,.05),new THREE.Vector2(.215,.1),new THREE.Vector2(.17,.13),new THREE.Vector2(.135,.42),new THREE.Vector2(.11,.46),new THREE.Vector2(0,.46)];
+  g.add(new THREE.Mesh(new THREE.LatheGeometry(prof,64),ti));
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(.2,.008,8,64),tiDark);ring.rotation.x=Math.PI/2;ring.position.y=.1;g.add(ring);
+  return g;
+}
+function naturalTooth(w,h,rootLen){
+  const g=new THREE.Group();
+  const c=new THREE.Mesh(crownGeo(w,h),enamel);g.add(c);
+  const r=new THREE.Mesh(new THREE.CylinderGeometry(w*.32,w*.1,rootLen,24,1,false),root_m);r.position.y=-h*.38-rootLen/2;g.add(r);
+  return g;
+}
+
+/* specimen block */
+const BW=3.6,BH=1.6,BD=1.4,BTOP=-.42;
+const block=new THREE.Mesh(new RoundedBoxGeometry(BW,BH,BD,4,.12),bone);block.position.y=BTOP-BH/2;block.renderOrder=2;spin.add(block);
+const edges=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(BW+.02,BH+.02,BD+.02)),edgeM);edges.position.copy(block.position);spin.add(edges);
+const gumM=new THREE.Mesh(new RoundedBoxGeometry(BW,.22,BD,3,.08),gum);gumM.position.y=BTOP+.09;gumM.renderOrder=3;spin.add(gumM);
+// bone "trabecular" points
+const N=900,pts=new Float32Array(N*3);for(let i=0;i<N;i++){pts[i*3]=(Math.random()-.5)*(BW-.2);pts[i*3+1]=BTOP-.08-Math.random()*(BH-.2);pts[i*3+2]=(Math.random()-.5)*(BD-.2)}
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pts,3));
+const pMat=new THREE.PointsMaterial({color:0xc3cad3,size:.028,transparent:true,opacity:.45,depthWrite:false});
+const cloud=new THREE.Points(pg,pMat);spin.add(cloud);
+
+// neighbour teeth
+const nL=naturalTooth(.86,.8,1.05),nR=naturalTooth(.86,.8,1.05);
+nL.position.set(-1.08,.14,0);nR.position.set(1.08,.14,0);nL.rotation.y=.3;nR.rotation.y=-.2;spin.add(nL,nR);
+
+// implant parts
+const post=postGroup(),abut=abutmentGroup(),crown=new THREE.Mesh(crownGeo(.9,.82),ceramic);
+spin.add(post,abut,crown);
+// planned position ghost (scan)
+const ghost=new THREE.Mesh(new THREE.CylinderGeometry(R_TOP+.02,R_BOT+.02,POST_LEN,18,6,true),new THREE.MeshBasicMaterial({color:0x45d8c8,wireframe:true,transparent:true,opacity:0,depthWrite:false}));
+ghost.position.y=BTOP-POST_LEN/2;spin.add(ghost);
+// scan sheet
+const sheetG=new THREE.Group();
+const sheetPlane=new THREE.Mesh(new THREE.PlaneGeometry(BW+.7,BD+.7),new THREE.MeshBasicMaterial({color:0x45d8c8,transparent:true,opacity:.12,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide}));sheetPlane.rotation.x=-Math.PI/2;
+const sheetEdge=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.PlaneGeometry(BW+.7,BD+.7)),new THREE.LineBasicMaterial({color:0x45d8c8,transparent:true,opacity:.9}));sheetEdge.rotation.x=-Math.PI/2;
+sheetG.add(sheetPlane,sheetEdge);sheetG.visible=false;spin.add(sheetG);
+// soft floor shadow
+const sc=document.createElement('canvas');sc.width=sc.height=128;const sx=sc.getContext('2d');const gr=sx.createRadialGradient(64,64,0,64,64,64);gr.addColorStop(0,'rgba(0,0,0,.55)');gr.addColorStop(1,'rgba(0,0,0,0)');sx.fillStyle=gr;sx.fillRect(0,0,128,128);
+const shadow=new THREE.Mesh(new THREE.PlaneGeometry(5.6,2.6),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(sc),transparent:true,depthWrite:false}));shadow.rotation.x=-Math.PI/2;shadow.position.y=BTOP-BH-.25;spin.add(shadow);
+
+/* choreography */
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,seg=(p,a,b)=>ease(clamp((p-a)/(b-a))),mix=(a,b,t)=>a+(b-a)*t;
+const V=(x,y,z)=>new THREE.Vector3(x,y,z);
+const P={ // positions: spread (hero), column (consult/scan), final
+  post:[V(-.85,1.9,.35),V(0,1.45,0),V(0,BTOP,0)],
+  abut:[V(.25,2.3,.1),V(0,1.75,0),V(0,BTOP,0)],
+  crown:[V(1.35,1.85,.2),V(0,2.55,0),V(0,.16,0)],
+};
+const tmp=new THREE.Vector3();
+let pS=reduce?1:0,t0=performance.now(),time=0;
+let yaw=-.35,pitch=0,vy=0,drag=false,lastX=0,lastY=0,idle=0;
+function pose(p,time){
+  const u=seg(p,.03,.2),pl=seg(p,.5,.69),ab=seg(p,.73,.84),cr=seg(p,.83,.95),scan=clamp((p-.3)/(.2));
+  const bob=(1-u)*.06;
+  // post
+  tmp.lerpVectors(P.post[0],P.post[1],u);post.position.lerpVectors(tmp,P.post[2],pl);post.position.y+=Math.sin(time*1.1)*bob;
+  post.rotation.set(0,(1-u)*.4+pl*Math.PI*5,(1-u)*.5);
+  tmp.lerpVectors(P.abut[0],P.abut[1],u);abut.position.lerpVectors(tmp,P.abut[2],ab);abut.position.y+=Math.sin(time*1.1+1)*bob;
+  abut.rotation.set((1-u)*.3,ab*Math.PI*2,(1-u)*-.2);
+  tmp.lerpVectors(P.crown[0],P.crown[1],u);crown.position.lerpVectors(tmp,P.crown[2],cr);crown.position.y+=Math.sin(time*1.1+2)*bob;
+  crown.rotation.set((1-u)*.25,(1-u)*.8+cr*.0,(1-u)*-.45);
+  // scan
+  const scanOn=p>.29&&p<.52;sheetG.visible=scanOn;
+  if(scanOn){const s=clamp((p-.3)/.2);sheetG.position.y=mix(.9,BTOP-BH-.05,s);}
+  const scanGlow=Math.sin(clamp((p-.28)/.26)*Math.PI);
+  pMat.color.setRGB(mix(.76,.27,scanGlow),mix(.79,.85,scanGlow),mix(.83,.78,scanGlow));pMat.opacity=.35+.45*scanGlow;pMat.size=.026+.012*scanGlow;
+  edgeM.color.setRGB(mix(.76,.27,scanGlow),mix(.79,.85,scanGlow),mix(.83,.78,scanGlow));edgeM.opacity=.3+.4*scanGlow;
+  ghost.material.opacity=.55*clamp((p-.36)/.08)*(1-pl);
+  // camera
+  const focus=seg(p,.45,.64),last=seg(p,.74,.98);
+  return {ty:mix(mix(mix(.95,.75,u),-.55,focus),-.25,last),dist:mix(mix(mix(13.2,12.6,u),11.6,focus),12.2,last),el:mix(mix(mix(1.4,1.9,u),2.6,focus),2.2,last)};
+}
+let W=1,H=1,wide=true;
+function resize(){
+  const r=canvas.getBoundingClientRect();W=Math.max(1,r.width);H=Math.max(1,r.height);wide=innerWidth>760;
+  renderer.setSize(W,H,false);camera.aspect=W/H;
+  if(wide)camera.setViewOffset(W,H,-W*.19,0,W,H);else camera.clearViewOffset();
+  camera.updateProjectionMatrix();need=true;
+}
+let need=true,visible=true,running=false,raf=0;
+function frame(now){
+  raf=0;const dt=Math.min(.05,(now-t0)/1000);t0=now;time+=dt;
+  const target=reduce?1:(window.__build?.p??0);
+  pS+=(target-pS)*Math.min(1,dt*7);
+  if(!drag){yaw+=vy*dt;vy*=Math.exp(-3.5*dt);idle+=dt;if(!reduce&&idle>1.6){if(pS<.1)yaw+=dt*.16;else{const tgt=Math.round((yaw+.35)/(Math.PI*2))*Math.PI*2-.35;yaw+=(tgt-yaw)*Math.min(1,dt*1.4)}}pitch*=Math.exp(-2*dt)}
+  spin.rotation.y=yaw;spin.rotation.x=pitch;
+  const c=pose(pS,reduce?0:time);
+  const fit=wide?1:Math.max(.8,.9/camera.aspect);
+  camera.position.set(0,c.ty+c.el,c.dist*fit);camera.lookAt(0,c.ty,0);
+  renderer.render(scene,camera);
+  if(running&&!reduce)raf=requestAnimationFrame(frame);
+  else if(reduce&&(drag||Math.abs(vy)>.01))raf=requestAnimationFrame(frame);
+}
+function start(){if(running)return;running=true;t0=performance.now();if(!raf)raf=requestAnimationFrame(frame)}
+function stop(){running=false;if(raf){cancelAnimationFrame(raf);raf=0}}
+function kick(){if(!raf)raf=requestAnimationFrame(frame)}
+new ResizeObserver(()=>{resize();kick()}).observe(canvas);
+new IntersectionObserver(es=>{visible=es[0].isIntersecting;if(visible&&!document.hidden&&!reduce)start();else stop();if(reduce)kick()}).observe(stage);
+document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else if(visible&&!reduce)start()});
+/* drag to turn */
+canvas.addEventListener('pointerdown',e=>{drag=true;idle=0;lastX=e.clientX;lastY=e.clientY;vy=0;canvas.setPointerCapture(e.pointerId);kick()});
+canvas.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-lastX,dy=e.clientY-lastY;lastX=e.clientX;lastY=e.clientY;yaw+=dx*.008;vy=dx*.008*60*.5;if(e.pointerType==='mouse')pitch=clamp(pitch+dy*.004,-.35,.35);kick()});
+const end=()=>{drag=false;idle=0;kick()};canvas.addEventListener('pointerup',end);canvas.addEventListener('pointercancel',end);
+canvas.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){yaw-=.25;idle=0;e.preventDefault();kick()}if(e.key==='ArrowRight'){yaw+=.25;idle=0;e.preventDefault();kick()}});
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();stop();document.documentElement.classList.remove('is-3d')});
+resize();
+renderer.compile(scene,camera);
+document.documentElement.classList.add('is-3d');
+if(reduce)kick();else start();
+window.__3d={ok:true};
+}
+</script>
+</body>
+</html>
